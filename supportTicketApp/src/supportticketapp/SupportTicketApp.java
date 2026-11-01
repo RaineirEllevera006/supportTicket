@@ -83,7 +83,30 @@ class TicketQueue {
       
       
 }   
-    
+
+public class SupportTicketApp extends javax.swing.JFrame {
+
+    TicketQueue queue = new TicketQueue();
+
+    javax.swing.JTextField idField = new javax.swing.JTextField();
+    javax.swing.JTextField nameField = new javax.swing.JTextField();
+    javax.swing.JTextField issueField = new javax.swing.JTextField();
+    javax.swing.JTextField searchField = new javax.swing.JTextField();
+
+ 
+    javax.swing.table.DefaultTableModel model = new javax.swing.table.DefaultTableModel(
+            new String[]{"Position", "Ticket ID", "Name", "Issue"}, 0) {
+        public boolean isCellEditable(int row, int col) {
+            return false;
+        }
+    };
+    javax.swing.JTable table = new javax.swing.JTable(model);
+
+    javax.swing.JLabel message = new javax.swing.JLabel("Register a ticket to begin.");
+
+}
+
+
 public class SupportTicketApp {
     
     public static void main(String[] args) {
