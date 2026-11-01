@@ -46,8 +46,21 @@ class TicketQueue {
         }
         size++;
     }
-
     
+    Ticket dequeue() {
+        if (front == null) {
+            return null;
+        }
+        Ticket t = front.data;
+        front = front.next; 
+        if (front == null) {        
+            rear = null;
+        }
+        size--;
+        return t;
+    }
+
+}   
     
 public class SupportTicketApp {
     
@@ -55,5 +68,4 @@ public class SupportTicketApp {
     
     }
     
-}
 }
