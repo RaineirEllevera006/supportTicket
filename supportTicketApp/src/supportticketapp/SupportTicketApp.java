@@ -12,6 +12,15 @@ class Ticket {
     }
 }
 
+class Node {
+    Ticket data;
+    Node next;
+
+    Node(Ticket data) {
+        this.data = data;
+        this.next = null;
+    }
+}
 
 public class SupportTicketApp {
     
