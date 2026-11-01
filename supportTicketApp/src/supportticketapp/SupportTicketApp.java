@@ -27,8 +27,26 @@ class TicketQueue {
     private Node rear = null;
     private int size = 0;
 
+   int size() {
+        return size;
+    }
 
-}
+    boolean isEmpty() {
+        return size == 0;
+    }
+
+    void enqueue(Ticket t) {
+        Node newNode = new Node(t);
+        if (rear == null) {           
+            front = newNode;
+            rear = newNode;
+        } else {
+            rear.next = newNode;    
+            rear = newNode;         
+        }
+        size++;
+    }
+
     
     
 public class SupportTicketApp {
@@ -37,4 +55,5 @@ public class SupportTicketApp {
     
     }
     
+}
 }
