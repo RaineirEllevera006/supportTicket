@@ -67,6 +67,21 @@ class TicketQueue {
         }
         return current.data;
     }
+     
+      int search(String id) {
+        Node current = front;
+        int position = 0;
+        while (current != null) {
+            if (current.data.id.equalsIgnoreCase(id)) {
+                return position;
+            }
+            current = current.next;
+            position++;
+        }
+        return -1;
+    }
+      
+      
 }   
     
 public class SupportTicketApp {
