@@ -60,6 +60,13 @@ class TicketQueue {
         return t;
     }
 
+     Ticket get(int position) {
+        Node current = front;
+        for (int i = 0; i < position; i++) {
+            current = current.next;
+        }
+        return current.data;
+    }
 }   
     
 public class SupportTicketApp {
