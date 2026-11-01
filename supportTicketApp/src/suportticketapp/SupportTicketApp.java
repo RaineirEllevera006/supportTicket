@@ -110,6 +110,13 @@ public class SupportTicketApp extends javax.swing.JFrame {
         setSize(600, 480);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
+        
+        addLabel("Ticket ID:", 20, 20);
+        addLabel("Name:", 20, 55);
+        addLabel("Issue:", 20, 90);
+        addLabel("Search ID:", 20, 165);
+
+        
     
 }
     
