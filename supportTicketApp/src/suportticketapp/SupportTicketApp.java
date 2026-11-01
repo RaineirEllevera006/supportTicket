@@ -1,4 +1,4 @@
-package supportticketapp;
+package suportticketapp;
 
 class Ticket {
     String id;
@@ -104,10 +104,14 @@ public class SupportTicketApp extends javax.swing.JFrame {
 
     javax.swing.JLabel message = new javax.swing.JLabel("Register a ticket to begin.");
 
+    
+    public SupportTicketApp (){
+        setTitle("Support Ticket Queue");
+        setSize(600, 480);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLayout(null);
+    
 }
-
-
-public class SupportTicketApp {
     
     public static void main(String[] args) {
     
