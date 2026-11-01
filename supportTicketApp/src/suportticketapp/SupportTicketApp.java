@@ -116,7 +116,10 @@ public class SupportTicketApp extends javax.swing.JFrame {
         addLabel("Issue:", 20, 90);
         addLabel("Search ID:", 20, 165);
 
-        
+        idField.setBounds(130, 20, 200, 25);
+        nameField.setBounds(130, 55, 200, 25);
+        issueField.setBounds(130, 90, 200, 25);
+        searchField.setBounds(130, 165, 200, 25);
     
 }
     
