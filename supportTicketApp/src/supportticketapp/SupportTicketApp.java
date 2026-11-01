@@ -22,6 +22,15 @@ class Node {
     }
 }
 
+class TicketQueue {
+    private Node front = null;
+    private Node rear = null;
+    private int size = 0;
+
+
+}
+    
+    
 public class SupportTicketApp {
     
     public static void main(String[] args) {
