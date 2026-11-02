@@ -164,6 +164,28 @@ public class SupportTicketApp extends javax.swing.JFrame {
             model.addRow(new Object[]{position, t.id, t.name, t.issue});
         }
     }
+      
+    void registerTicket() {
+        String id = idField.getText().trim();
+        String name = nameField.getText().trim();
+        String issue = issueField.getText().trim();
+
+        if (id.isEmpty() || name.isEmpty() || issue.isEmpty()) {
+            message.setText("Please fill in all fields.");
+            return;
+        }
+        if (queue.search(id) != -1) {
+            message.setText("Ticket ID " + id + " already exists.");
+            return;
+        }
+
+        queue.enqueue(new Ticket(id, name, issue));
+        refreshTable();
+        idField.setText("");
+        nameField.setText("");
+        issueField.setText("");
+        message.setText("Ticket " + id + " registered. Pending: " + queue.size());
+    }  
     
     
     public static void main(String[] args) {
