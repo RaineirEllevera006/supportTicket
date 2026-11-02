@@ -197,6 +197,25 @@ public class SupportTicketApp extends javax.swing.JFrame {
         message.setText("Resolved " + t.id + " (" + t.name + "). Pending: " + queue.size());
     }
     
+    void searchTicket() {
+        String id = searchField.getText().trim();
+        if (id.isEmpty()) {
+            message.setText("Type a ticket ID to search.");
+            return;
+        }
+
+        int position = queue.search(id);
+        if (position == -1) {
+            table.clearSelection();
+            message.setText("NOT FOUND: no pending ticket with ID " + id);
+        } else {
+            Ticket t = queue.get(position);
+            table.setRowSelectionInterval(position, position);  // highlight the row
+            message.setText("FOUND: " + t.id + " | " + t.name + " | " + t.issue
+                    + " (position " + (position + 1) + ")");
+        }
+    }
+    
     public static void main(String[] args) {
     
     }
