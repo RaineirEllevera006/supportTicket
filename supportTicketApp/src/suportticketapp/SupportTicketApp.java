@@ -187,6 +187,15 @@ public class SupportTicketApp extends javax.swing.JFrame {
         message.setText("Ticket " + id + " registered. Pending: " + queue.size());
     }  
     
+    void resolveNextTicket() {
+        if (queue.isEmpty()) {
+            message.setText("No pending tickets to resolve.");
+            return;
+        }
+        Ticket t = queue.dequeue();
+        refreshTable();
+        message.setText("Resolved " + t.id + " (" + t.name + "). Pending: " + queue.size());
+    }
     
     public static void main(String[] args) {
     
