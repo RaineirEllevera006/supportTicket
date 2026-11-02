@@ -121,6 +121,14 @@ public class SupportTicketApp extends javax.swing.JFrame {
         issueField.setBounds(130, 90, 200, 25);
         searchField.setBounds(130, 165, 200, 25);
     
+        javax.swing.JButton registerButton = new javax.swing.JButton("Register Ticket");
+        javax.swing.JButton resolveButton = new javax.swing.JButton("Resolve Next Ticket");
+        javax.swing.JButton searchButton = new javax.swing.JButton("Search");
+        registerButton.setBounds(130, 125, 200, 25);
+        resolveButton.setBounds(350, 125, 200, 25);
+        searchButton.setBounds(350, 165, 100, 25);
+        
+        
 }
     
     public static void main(String[] args) {
