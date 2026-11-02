@@ -128,6 +128,10 @@ public class SupportTicketApp extends javax.swing.JFrame {
         resolveButton.setBounds(350, 125, 200, 25);
         searchButton.setBounds(350, 165, 100, 25);
         
+        javax.swing.JScrollPane scroll = new javax.swing.JScrollPane(table);
+        scroll.setBounds(20, 205, 545, 180);
+        message.setBounds(20, 395, 545, 25);
+        
         
 }
     
