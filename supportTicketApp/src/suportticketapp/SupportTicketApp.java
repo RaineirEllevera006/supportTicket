@@ -142,7 +142,17 @@ public class SupportTicketApp extends javax.swing.JFrame {
         add(scroll);
         add(message);
         
-}
+        registerButton.addActionListener(e -> registerTicket());
+        resolveButton.addActionListener(e -> resolveNextTicket());
+        searchButton.addActionListener(e -> searchTicket());
+   
+    }
+     void addLabel(String text, int x, int y) {
+        javax.swing.JLabel label = new javax.swing.JLabel(text);
+        label.setBounds(x, y, 100, 25);
+        add(label);
+    }
+    
     
     public static void main(String[] args) {
     
