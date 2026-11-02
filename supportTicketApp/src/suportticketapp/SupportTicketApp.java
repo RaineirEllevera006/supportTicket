@@ -132,6 +132,15 @@ public class SupportTicketApp extends javax.swing.JFrame {
         scroll.setBounds(20, 205, 545, 180);
         message.setBounds(20, 395, 545, 25);
         
+        add(idField);
+        add(nameField);
+        add(issueField);
+        add(searchField);
+        add(registerButton);
+        add(resolveButton);
+        add(searchButton);
+        add(scroll);
+        add(message);
         
 }
     
