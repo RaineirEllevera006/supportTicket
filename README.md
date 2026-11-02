@@ -1,4 +1,4 @@
-/* our project supportTicketApp is a Java Swing application that manages customer support tickets using a queue built from a manually coded linked list
+Our project supportTicketApp is a Java Swing application that manages customer support tickets using a queue built from a manually coded linked list
 (First In, First Out).without using a java.util imports.
 
 The setup simply requires apacheNetBeans and clone our repository using the link: 
@@ -18,5 +18,3 @@ Display Pending Tickets - a table shows all unresolved tickets in queue order; t
 Team Roles:
 
 Both of us worked together to code the functions and make the JFrame work
-
-*/
