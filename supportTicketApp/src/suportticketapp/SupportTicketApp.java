@@ -217,7 +217,7 @@ public class SupportTicketApp extends javax.swing.JFrame {
     }
     
     public static void main(String[] args) {
-          ;
+          new SupportTicketApp().setVisible(true);
     }
     
 }
