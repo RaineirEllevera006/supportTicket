@@ -1,7 +1,7 @@
 Our project supportTicketApp is a Java Swing application that manages customer support tickets using a queue built from a manually coded linked list
 (First In, First Out).without using a java.util imports.
 
-The setup simply requires apacheNetBeans and clone our repository using the link: 
+The setup simply requires apacheNetBeans and clone our repository using the link: https://github.com/RaineirEllevera006/supportTicket.git
 
 Features:
 
