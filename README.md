@@ -15,4 +15,8 @@ Input Validation - empty fields are rejected, and duplicate ticket IDs are not a
 
 Display Pending Tickets - a table shows all unresolved tickets in queue order; the first row is marked as "next"
 
+Team Roles:
+
+Both of us worked together to code the functions and make the JFrame work
+
 */
