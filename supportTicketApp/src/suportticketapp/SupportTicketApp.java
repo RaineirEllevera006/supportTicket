@@ -210,14 +210,14 @@ public class SupportTicketApp extends javax.swing.JFrame {
             message.setText("NOT FOUND: no pending ticket with ID " + id);
         } else {
             Ticket t = queue.get(position);
-            table.setRowSelectionInterval(position, position);  // highlight the row
+            table.setRowSelectionInterval(position, position);
             message.setText("FOUND: " + t.id + " | " + t.name + " | " + t.issue
                     + " (position " + (position + 1) + ")");
         }
     }
     
     public static void main(String[] args) {
-    
+          ;
     }
     
 }
