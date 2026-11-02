@@ -152,6 +152,18 @@ public class SupportTicketApp extends javax.swing.JFrame {
         label.setBounds(x, y, 100, 25);
         add(label);
     }
+     
+      void refreshTable() {
+        model.setRowCount(0);
+        for (int i = 0; i < queue.size(); i++) {
+            Ticket t = queue.get(i);
+            String position = String.valueOf(i + 1);
+            if (i == 0) {
+                position = "1 (next)";
+            }
+            model.addRow(new Object[]{position, t.id, t.name, t.issue});
+        }
+    }
     
     
     public static void main(String[] args) {
